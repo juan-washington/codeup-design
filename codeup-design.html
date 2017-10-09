@@ -9,9 +9,31 @@
 
     <title>Codeup-Design</title>
     <style>
+        .navbar {
+            background-color: white;
+            border: none;
+            height: 10px;
+            font-family: 'Abel', sans-serif;
+        }
+
+        .navbar label {
+            font-weight:bold;
+            font-size: 2em;
+        }
+
+        .navbar img {
+            width: 105px;
+            height: 105px;
+        }
+
+        .navbar ul {
+            padding-top: 30px;
+        }
+
         div.row {
+            height: 30px;
             background-color: #e6e6e6;
-            height: 2em;
+        }
 
 
         }
@@ -20,30 +42,27 @@
     </head>
 <body>
 
-<main class="container">
-    <div class="row">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div>hello</div>
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header navbar-right">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">SERVICES</a>
-                    <a class="navbar-brand" href="#">WORK</a>
-                    <a class="navbar-brand" href="#">BLOG</a>
-                    <a class="navbar-brand" href="#">CONTACT</a>
-
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <label for=""><img src="images/logo.png" alt="">codeup design</label>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">WORK</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-            </div><!-- /.container-fluid -->
-        </nav>
-</main>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
 
 
 
