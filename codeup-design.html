@@ -1,25 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Anton" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Abel|Anton" rel="stylesheet">
     <!--font-family: 'Anton', sans-serif;-->
 
 
     <title>Nav Bar</title>
 
     <style>
-        body {
-            margin: 0 auto;
-            max-width: 1200px;
-        }
+                                                                                                                                                                             body {
+                                                                                                                                                                                 margin: 0 auto;
+                                                                                                                                                                                 max-width: 1200px;
+                                                                                                                                                                             }
 
         .navbar {
             background-color: white;
@@ -42,35 +43,240 @@
             padding-top: 30px;
         }
 
-        div.row {
+        .navbar-header .row {
             height: 30px;
             background-color: #e6e6e6;
         }
+
+
+        /*small circles setting*/
+        .fa {
+            padding: 3px;
+            font-size: 10px;
+            height: 18px;
+            width: 18px;
+            text-align: center;
+            text-decoration: none;
+            margin: 8px 2px;
+            border-radius: 100%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+
+        .fa-design {
+            background: #E6563B;
+            color: black;
+        }
+
+        .fa-develop {
+            background: #EB9D3A;
+            color: black;
+        }
+
+        .fa-sup {
+            background: #7cb06c;
+            color: black;
+        }
+
+        .fa-host {
+            background: #00aba9;
+            color: black;
+        }
+        /*fonts*/
+        .antonfont {
+            font-family: anton, sans-serif;;
+        }
+
+        .abelfont {
+            font-family: abel, sans-serif;;
+
+        }
+        img {
+            width: 100%;
+            height: 200px;
+        }
+
+        /*patting 0 for the dots and the feature*/
+        .dotrightformat {
+            padding-right: 0px;
+            text-align: right;
+
+        }
+        .featureleftformat {
+            padding-left: 0px;
+            text-align: left;
+                    }
+        .projectimage {
+            background-image: url("images/ipad.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+        }
+
     </style>
 
+
 </head>
+
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 col-md-offset-0 col-md-4">
-                        <label><img src="images/logo.png" alt="">codeup design</label>
+
+<header>
+    <div>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-lg-offset-2 col-md-offset-0 col-md-4">
+                                    <label><img src="images/logo.png" alt="">codeup design</label>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <ul class="nav navbar-nav pull-right">
+                                        <li><a href="#">SERVICES</a></li>
+                                        <li><a href="#">WORK</a></li>
+                                        <li><a href="#">BLOG</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <ul class="nav navbar-nav pull-right">
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">WORK</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                        </ul>
+                </div>
+            </nav>
+    </div>
+</header>
+<!--large and extra large sections-->
+<h1 class="antonfont">SELECTED WORK</h1>
+    <div class="container" style="margin-top:50px">
+                    <!--first column-->
+                    <div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <!--computer picture and elements-->
+                            <div>
+                                <div>
+                            <!--<source media="(min-width: 200px)" srcset="images/apple-ipad.jpg" align="center">-->
+                                    <div class="projectimage">
+
+                                    </div>
+                                    <!--<img src="images/apple-ipad.jpg" alt="Flowers" style="width: 100%" align="center">-->
+                                    <div class="col-xs-6 featureleftformat">
+                                        <h5 class="antonfont">FEATURED PROJECT</h5>
+                                    </div>
+                                    <!-- circle icons -->
+                                        <div class="col-xs-6 dotrightformat">
+                                            <a href="#" class="fa fa-design">D</a>
+                                            <a href="#" class="fa fa-develop">D</a>
+                                            <a href="#" class="fa fa-sup">S</a>
+                                            <a href="#" class="fa fa-host">H</a>
+                                        </div>
+                                </div>
+                            </div>
+                        <!--face picture and elements-->
+                            <div>
+                                <!--<source media="(min-width: 200px)" srcset="images/man.jpg" align="center">-->
+
+                                <img src="images/man.jpg" alt="Flowers" style="width:100%" align="center">
+                                <div class="col-xs-6 featureleftformat">
+                                    <h5 class="antonfont">FEATURED PROJECT</h5>
+                                </div>
+                                <!-- circle icons -->
+                                <div class="col-xs-6 dotrightformat">
+                                    <a href="#" class="fa fa-design">D</a>
+                                    <a href="#" class="fa fa-develop">D</a>
+                                    <a href="#" class="fa fa-sup">S</a>
+                                    <a href="#" class="fa fa-host">H</a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!--Second Column-->
+                    <div class="container col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div>
+                            <!--<source media="(min-width: 760px)" srcset="images/macbook.jpg" align="center">-->
+                            <!--<source media="(min-width: 465px)" srcset="images/macbook.jpg" align="center">-->
+                            <img src="images/macbook.jpg" alt="Flowers" style="width: 100%" align="center">
+                            <div class="col-xs-6 featureleftformat">
+                                <h5 class="antonfont">FEATURED PROJECT</h5>
+                            </div>
+                            <!-- circle icons -->
+                            <div class="col-xs-6 dotrightformat">
+                                <a href="#" class="fa fa-design">D</a>
+                                <a href="#" class="fa fa-develop">D</a>
+                                <a href="#" class="fa fa-sup">S</a>
+                                <a href="#" class="fa fa-host">H</a>
+                            </div>
+                        </div>
+                        <div>
+                            <!--<source media="(min-width: 760px)" srcset="images/security.jpg" align="center">-->
+                            <!--<source media="(min-width: 465px)" srcset="images/security.jpg" align="center">-->
+                            <img src="images/security.jpg" alt="Flowers" style="width: 100%"" align="center">
+                            <div class="col-xs-6 featureleftformat">
+                                <h5 class="antonfont">FEATURED PROJECT</h5>
+                            </div>
+                            <!-- circle icons -->
+                            <div class="col-xs-6 dotrightformat">
+                                <a href="#" class="fa fa-design">D</a>
+                                <a href="#" class="fa fa-develop">D</a>
+                                <a href="#" class="fa fa-sup">S</a>
+                                <a href="#" class="fa fa-host">H</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--Third Column-->
+                    <div class="container col-xs-12 col-sm-12 col-md-4 col-lg-4" >
+                        <H5 class="antonfont">THE LAST</H5>
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg3">
+                            <!--<source media="(min-width: 1200px)" srcset="images/mobile-phone.jpg">-->
+                            <!--<source media="(min-width: 465px)" srcset="images/mobile-phone.jpg">-->
+                            <img src="images/mobile-phone.jpg" alt="Flowers" style="width:100%  ">
+                            </div>
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            <H3 class="antonfont" style="margin-top:0">THE ADMIN BAR AND ABSOLUTELY POSSITIONING</H3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg3">
+                            <!--<source media="(min-width: 1200px)" srcset="images/head.jpg">-->
+                            <!--<source media="(min-width: 465px)" srcset="images/head.jpg">-->
+                            <img src="images/head.jpg" alt="Flowers" style="width: 100%">
+                            </div>
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" style="margin-top: 0">
+                                <h3 class="antonfont" style="margin: 0px 0px">NIBBLER AWESOME</h3>
+                                <h3 class="antonfont" style="margin-top: 0px">WEBSITE TESTING</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg3">
+                            <!--<source media="(min-width: 1200px)" srcset="images/ipad.jpg">-->
+                            <!--<source media="(min-width: 465px)" srcset="images/ipad.jpg">-->
+                            <img src="images/ipad.jpg" alt="Flowers" style="width: 100%">
+                            </div>
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            <H3 class="antonfont"  style="margin-top: 0px">HOW TO GET GOOGLE TO LIKE YOU</H3>
+                            </div>
+                        </div>
+                        <div class="row col-xs-12">
+
+                            <H5 class="antonfont">THE LAST TWEET</H5>
+                        </div>
+                        <div class="row col-xs-12">
+                            <div> class="abelfont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur delectus dicta dolorem dolorum eveniet fugit ipsa labore laboriosam modi nobis obcaecati pariatur praesentium, reprehenderit rerum sequi tempore vel voluptate!</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</nav>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 
