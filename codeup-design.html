@@ -17,35 +17,70 @@
     <title>Nav Bar</title>
 
     <style>
-        body {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-
-        .navbar {
+        .custom_navbar {
             background-color: white;
             border: none;
             height: 10px;
             font-family: 'Abel', sans-serif;
         }
 
-        .navbar label {
+        .codeupDesignlabel {
             font-weight:bold;
             font-size: 2em;
         }
 
-        .navbar img {
+        .codeupDesignLogo {
             width: 105px;
             height: 105px;
         }
 
-        .navbar ul {
+        .paddedUL {
             padding-top: 30px;
         }
 
-        .navbar-header .row {
+        .navbartoprow {
             height: 30px;
             background-color: #e6e6e6;
+        }
+
+        .small_nav_img {
+            margin-left: 20px;
+        }
+
+        .xs_nav_navbar_text {
+            font-size: 4em;
+            color: black;
+            text-align: center;
+        }
+        .xs_nav_anchor_tags {
+            font-size: 2em;
+        }
+
+        .circle {
+            margin: 15px;
+            border: 10px solid white;
+            float: left;
+            color: white;
+            height: 100px;
+            width: 100px;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        .circle .red {
+            background: #E6563B;
+        }
+
+        .circle .orange {
+            background: #EB9D3A;
+        }
+
+        .circle .green {
+            background: #7cb06c;
+        }
+
+        .circle .teal {
+            background: #00ABA9;
         }
 
 
@@ -188,29 +223,117 @@
 <body>
 
 <header>
-    <div>
+    <!--med, lg and xlg navbar-->
+    <div class="med_nav visible-md visible-lg">
+        <nav class="navbar navbar-default custom_navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="container">
+                        <div class="row navbartoprow">
+                            <div class="col-lg-4 col-lg-offset-2 col-md-offset-0 col-md-4">
+                                <label class="codeupDesignlabel"><img class="codeupDesignLogo" src="img/logo.png" alt="">codeup design</label>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-2">
+                                <ul class="paddedUL nav navbar-nav pull-right text-left">
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">WORK</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4 col-lg-offset-2 col-md-offset-0 col-md-4">
-                                    <label><img src="images/logo.png" alt="">codeup design</label>
+    <!--small navbar-->
+    <div class ="small_nav visible-sm">
+        <nav class="navbar navbar-default custom_navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="container">
+                        <div class="row navbartoprow">
+                            <div class="col-sm-4 col-sm-offset-1">
+                                <ul class="paddedUL nav navbar-nav pull-right">
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">WORK</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="codeupDesignlabel"><img class="codeupDesignLogo small_nav_img" src="img/logo.png" alt="">codeup design</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul class="paddedUL nav navbar-nav pull-left">
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">CONTACT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--xs navbar-->
+    <div class="xs_nav visible-xs">
+        <nav class="navbar navbar-default custom_navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="container">
+                        <div class="row navbartoprow">
+                            <div class="col-xs-12 text-center">
+                                <img class="codeupDesignLogo" src="img/logo.png" alt="">
+                            </div>
+                            <div class="col-xs-12">
+                                <p class="navbar-text xs_nav_navbar_text">codeup design</p>
+                            </div>
+                            <div class="nav navbar-nav xs_nav_anchor_tags">
+                                <div class="col-xs-3">
+                                    <a href="#">SERVICES</a>
                                 </div>
-                                <div class="col-lg-4 col-md-4">
-                                    <ul class="nav navbar-nav pull-right">
-                                        <li><a href="#">SERVICES</a></li>
-                                        <li><a href="#">WORK</a></li>
-                                        <li><a href="#">BLOG</a></li>
-                                        <li><a href="#">CONTACT</a></li>
-                                    </ul>
+                                <div class="col-xs-3">
+                                    <a href="#">WORK</a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#">BLOG</a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#">CONTACT</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="antonfont  col-med-12 text-center">
+                <h2>VISUAL DESIGN & WEB DEVELOPMENT</h2>
+            </div>
+            <div class="antonfont  col-med-12 text-center">
+                <h5>FROM PARK CITY, UTAH</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="circle col-lg-2 col-lg-offset-2">
+                <div class="circle red">Design</div>
+            </div>
+            <div class="circle col-lg-2">
+                <div class="circle orange">Develop</div>
+            </div>
+            <div class="circle col-lg-2">
+                <div class="circle green">Support</div>
+            </div>
+            <div class="circle col-lg-2">
+                <div class="circle teal">Host</div>
+            </div>
+        </div>
     </div>
 </header>
 <!--large and extra large sections-->
